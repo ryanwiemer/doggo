@@ -7,22 +7,22 @@ function intro() {
 // ScrollMagic controller for all animation sequences
 const controller = new ScrollMagic.Controller();
 
-//Image sequence functionality
+//Image sequence classes
 const images = [
-  "img/birch1.jpg",
-  "img/birch2.jpg",
-  "img/birch3.jpg",
-  "img/birch4.jpg",
-  "img/birch5.jpg",
-  "img/birch6.jpg",
-  "img/birch7.jpg",
-  "img/birch8.jpg",
-  "img/birch9.jpg",
-  "img/birch10.jpg",
-  "img/birch11.jpg",
-  "img/birch12.jpg",
-  "img/birch13.jpg",
-  "img/birch14.jpg"
+  "intro__image--1",
+  "intro__image--2",
+  "intro__image--3",
+  "intro__image--4",
+  "intro__image--5",
+  "intro__image--6",
+  "intro__image--7",
+  "intro__image--8",
+  "intro__image--9",
+  "intro__image--10",
+  "intro__image--11",
+  "intro__image--12",
+  "intro__image--13",
+  "intro__image--14"
 ];
 
 const obj = {curImg: 0};
@@ -34,7 +34,8 @@ const tween = TweenLite.to(obj, 0.5,
     immediateRender: true,
     ease: Linear.easeNone,
     onUpdate: function () {
-      document.getElementById("intro__image").src=images[obj.curImg];
+      //console.log(className);
+      document.getElementById(images[obj.curImg]).classList.toggle('active');
     }
   }
 );
