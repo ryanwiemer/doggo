@@ -1,8 +1,8 @@
 {
   "name": "doggo",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Doggo For Hire",
-  "homepage": "http://doggoforhire.com",
+  "homepage": "https://www.doggoforhire.com",
   "bugs": {
     "url": "https://github.com/ryanwiemer/doggo/issues"
   },
