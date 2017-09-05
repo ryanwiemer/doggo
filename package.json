@@ -1,0 +1,57 @@
+{
+  "name": "doggo",
+  "version": "0.0.1",
+  "description": "Doggo For Hire",
+  "homepage": "http://doggoforhire.com",
+  "bugs": {
+    "url": "https://github.com/ryanwiemer/doggo/issues"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryanwiemer/doggo/"
+  },
+  "author": "Ryan Wiemer <ryan@ryanwiemer.com> (http://ryanwiemer.com/)",
+  "scripts": {
+    "clean": "rm -rf dist && rm -rf build",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "sync": "browser-sync start --server 'build' --files 'build' -b 'google chrome'",
+    "start": "npm-run-all -p build watch sync",
+    "deploy": "NODE_ENV=production npm-run-all -p build"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.3",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "browser-sync": "^2.18.13",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.28.7",
+    "eslint": "^4.6.1",
+    "eslint-config-react-app": "^2.0.0",
+    "eslint-plugin-flowtype": "^2.35.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "5.1.1",
+    "eslint-plugin-react": "^7.3.0",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "imports-loader": "^0.7.1",
+    "node-sass": "^4.5.3",
+    "npm-run-all": "^4.1.1",
+    "path": "^0.12.7",
+    "postcss-cli": "^4.1.0",
+    "postcss-loader": "^2.0.6",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "uglifyjs-webpack-plugin": "^0.4.6",
+    "webpack": "^3.5.5"
+  },
+  "dependencies": {
+    "gsap": "^1.20.2",
+    "lazysizes": "^4.0.0-rc3",
+    "objectFitPolyfill": "^2.0.5",
+    "scrollmagic": "^2.0.5"
+  }
+}

@@ -1,0 +1,23 @@
+/* ------------ *
+ *  Responsive  *
+ * ------------ */
+
+@mixin bp($breakpoint) {
+  @if $breakpoint == "small" {
+    @media (min-width: 700px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "medium" {
+    @media (min-width: 1100px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "large" {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+}

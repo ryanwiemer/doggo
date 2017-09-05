@@ -1,0 +1,124 @@
+/* ------- *
+ *  Intro   *
+ * --------*/
+
+.intro {
+  position: relative;
+  margin: 0 auto;
+}
+
+.intro__container {
+    background: rgba(0,0,0,.2);
+    height: 100%;
+    width: 100%;
+    position: relative;
+  @include bp(medium) {
+    width: 50%;
+    background: white;
+  }
+}
+
+.intro__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  padding: 0 4rem;
+  color: white;
+  height: 100vh;
+  @include bp(medium) {
+    color: $base;
+  }
+}
+
+.intro__trigger {
+  position: absolute;
+  top: 50vh;
+}
+
+.intro p {
+  max-width: 400px;
+}
+
+.intro__media {
+  margin: 0 auto;
+  width: 100%;
+  position: fixed;
+  height: 100vh;
+  @include bp(medium) {
+    width: 50%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.intro__end {
+  position: absolute;
+  bottom: 50vh;
+}
+
+.intro__media.active {
+  @include bp(medium) {
+    position: absolute !important;
+    top: inherit !important;
+  }
+}
+
+.intro__image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.intro__title {
+  font-size: 3rem;
+  line-height: 1.15;
+  position: absolute;
+  top: 5vh;
+  margin: 0 auto;
+  @include bp(small) {
+    font-size: 5rem;
+  }
+  @include bp(medium) {
+    font-size: 6rem;
+    position: relative;
+    top: 0;
+    left: auto;
+    right: auto;
+  }
+  span {
+    @include bp(medium) {
+      display: block;
+    }
+  }
+}
+
+.intro__scroll {
+  display: block;
+  font-size: 1.25rem;
+  position: absolute;
+  bottom: 5vh;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1.5;
+  animation: blinker 3s linear infinite;
+  color: white;
+  cursor: default;
+  @include bp(medium) {
+    color: $base;
+  }
+}
+
+@keyframes blinker {
+  50% { opacity: 0; }
+}

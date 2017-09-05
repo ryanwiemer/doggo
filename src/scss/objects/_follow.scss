@@ -1,0 +1,52 @@
+/* ------- *
+ *  Follow   *
+ * --------*/
+
+.follow {
+  padding: 8rem 2rem;
+}
+
+.follow__text {
+  margin-bottom: 3rem;
+}
+
+.follow__links a {
+  border: none;
+  margin: .5rem;
+  padding: .25rem .5rem;
+  border-radius: 4px;
+  line-height: 1.75rem;
+  color: white;
+  display: inline-block;
+}
+
+.instagram-follow-button {
+  background: $insta;
+  &:hover { background: darken($insta, 8%); }
+}
+@media (hover: none) {.instagram-follow-button { background: $insta !important;}}
+
+.twitter-share-button {
+  background: $twitter;
+  &:hover { background: darken($twitter, 8%); }
+}
+@media (hover: none) {.twitter-share-button { background: $twitter !important;}}
+
+.facebook-share-button {
+  background: $facebook;
+  &:hover { background: darken($facebook, 8%); }
+}
+@media (hover: none) {.facebook-share-button { background: $facebook !important;}}
+
+.icon {
+  fill: white;
+  float: left;
+  display: inline-block;
+  height: 1.75rem;
+  width: 1.75rem;
+  margin-right: .25rem;
+}
+
+.icon--facebook {
+  margin-right: 0 !important;
+}

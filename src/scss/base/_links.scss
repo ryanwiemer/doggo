@@ -1,0 +1,66 @@
+/* ------- *
+ *  Links  *
+ * --------*/
+a {
+  color: $base;
+  text-decoration: none;
+}
+
+p a {
+  border-bottom: 2px solid $tertiary;
+}
+
+@media (hover: none) {
+   p a:link {
+      color: $base !important;
+   }
+}
+
+
+.a1 {
+  border-color: $purple;
+  &:hover {
+    border-color: $purple;
+    color: $purple;
+  }
+}
+
+.a2 {
+  border-color: $yellow;
+  &:hover {
+    border-color: $yellow;
+    color: $yellow;
+  }
+}
+
+.a3 {
+  border-color: $green;
+  &:hover {
+    border-color: $green;
+    color: $green;
+  }
+}
+
+.a4 {
+  border-color: $orange;
+  &:hover {
+    border-color: $orange;
+    color: $orange;
+  }
+}
+
+.a5 {
+  border-color: $red;
+  &:hover {
+    border-color: $red;
+    color: $red;
+  }
+}
+
+.a6 {
+  border-color: $blue;
+  &:hover {
+    border-color: $blue;
+    color: $blue;
+  }
+}

@@ -1,0 +1,75 @@
+/* ------- *
+ *  recognition   *
+ * --------*/
+
+.recognition__ul {
+  margin-bottom: 2rem;
+}
+
+.recognition__ul li {
+  padding: .5rem;
+  @include bp(medium) {
+    padding: 1rem;
+  }
+}
+
+.recognition__ul figure {
+  height: 100%;
+  padding: 2rem;
+  border: .75rem $secondary solid;
+  border-radius: 4px;
+  position: relative;
+  @include bp(medium) {
+    padding: 4rem;
+  }
+}
+
+.recognition__svg  {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  path{
+    fill: $tertiary;
+  }
+}
+
+.recognition__ul figcaption {
+  margin-top: 2rem;
+  position: relative;
+}
+
+.recognition__ul .emoji--camera, .recognition__ul .emoji--basketball {
+  position: relative;
+  font-size: 4rem;
+  @include bp(medium) {
+    font-size: 6rem;
+  }
+}
+
+//Variations of the recognition hover effect
+@media (hover: none) {
+  .recognition__figure {
+    border-color: $secondary !important;
+    em { color: $base !important;}
+    path { fill: $tertiary !important; }
+  }
+}
+
+.recognition__figure--insta:hover {
+  border-color: $insta;
+  em { color: $insta; }
+  path { fill: $insta; }
+}
+
+.recognition__figure--warriors:hover {
+  border-color: $gold;
+  em { color: $gold; }
+  path { fill: $gold; }
+}
+
+.recognition__statement p {
+  display: inline-block;
+  margin: 2rem 0 0 0;
+}

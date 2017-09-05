@@ -1,0 +1,91 @@
+/* -------- *
+ *  Animations  *
+ * ---------*/
+
+p a, .recognition__svg path, .recognition__ul figure, .recognition__ul figure em, .follow__links a {
+  transition: all .25s ease-in-out;
+ }
+
+.follow, .follow__link em, .emoji--point {
+  transition: all .35s ease-in-out;
+}
+
+.fade {
+  @include bp(small) {
+    transition: transform .8s ease-in-out, opacity .6s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+}
+
+.fade--active {
+  @include bp(small) {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.main {
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loaded .main{
+  opacity: 1;
+  visibility: visible;
+}
+
+.loaded .loading {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+// Loading Bar
+.loading {
+  width: 10rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+}
+
+.dog {
+  animation: loader 2s infinite ease-in-out;
+  opacity: 0;
+}
+.dog:nth-child(1) {
+  animation-delay: 0.13s;
+}
+.dog:nth-child(2) {
+  animation-delay: 0.26s;
+}
+.dog:nth-child(3) {
+  animation-delay: 0.39s;
+}
+.dog:nth-child(4) {
+  animation-delay: 0.52s;
+}
+.dog:nth-child(5) {
+  animation-delay: 0.65s;
+}
+
+@keyframes loader {
+  0% {
+    opacity: 0;
+    transform: scale(0.1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.1);
+  }
+}

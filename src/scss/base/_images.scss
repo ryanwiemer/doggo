@@ -1,0 +1,54 @@
+/* -------- *
+ *  Images  *
+ * ---------*/
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.no-emoji .emoji {
+  display: none;
+}
+
+// Lazy Loading
+/* fade image in after load */
+.lazyload,
+.lazyloading {
+  opacity: 0;
+}
+
+.lazyloaded {
+  opacity: 1;
+  transition: all 500ms;
+}
+
+.gallery__img {
+  opacity: 1;
+  position: relative;
+}
+
+.gallery__img:after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 100%;
+}
+
+.gallery__img > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+//Prelaod image sequence
+.intro__media:before {
+  content: '';
+  background-image: url('/img/birch1.jpg'),url('/img/birch2.jpg'),url('/img/birch3.jpg'),url('/img/birch4.jpg'),url('/img/birch5.jpg'),url('/img/birch6.jpg'),url('/img/birch7.jpg'),url('/img/birch8.jpg'),url('/img/birch9.jpg'),url('/img/birch10.jpg'),url('/img/birch11.jpg'),url('/img/birch12.jpg'),url('/img/birch13.jpg'),url('/img/birch14.jpg');
+	width:0;
+	height:0;
+	visibility:hidden;
+}

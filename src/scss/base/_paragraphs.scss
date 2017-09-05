@@ -1,0 +1,12 @@
+/* ----------- *
+ *  Paragraphs *
+ * ----------- */
+
+p, figcaption {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  text-align: left;
+  @include bp(small) {
+    max-width: 600px;
+  }
+}

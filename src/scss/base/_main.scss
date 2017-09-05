@@ -1,0 +1,24 @@
+/* ------- *
+ *  Main  *
+ * ------- */
+
+ .main {
+  text-align: center;
+  color: $base;
+ }
+
+ .section {
+  background: white;
+  position: relative;
+  margin: 0 auto;
+ }
+
+.container {
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  max-width: 1300px;
+}
+
+.section--gray {
+  background: $secondary !important;
+}

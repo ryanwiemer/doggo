@@ -1,0 +1,54 @@
+/* ------- *
+ *  Gallery   *
+ * --------*/
+
+.gallery__ul {
+  li {
+    padding: .5rem 1rem;
+    @include bp(small) {
+      padding: 2rem;
+    }
+  }
+}
+
+.gallery__title {
+  @include bp(small) {
+    margin: 0 !important;
+  }
+}
+
+
+.gallery__img--1 {
+  background: lighten($orange, 10%);
+  &:after{
+      padding-bottom: 66.67%;
+  }
+}
+
+.gallery__img--2 {
+  background: lighten($green, 10%);
+  &:after {
+    padding-bottom: 124.91%;
+  }
+}
+
+.gallery__img--3 {
+  background: lighten($blue, 10%);
+  &:after {
+    padding-bottom: 66.48%;
+  }
+}
+
+.gallery__img--4 {
+  background: lighten($red, 10%);
+  &:after {
+    padding-bottom: 90.43%;
+  }
+}
+
+.gallery__img--5 {
+  background: lighten($yellow, 10%);
+  &:after {
+    padding-bottom: 74.91%;
+  }
+}

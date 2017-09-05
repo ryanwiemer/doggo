@@ -1,0 +1,122 @@
+/* ------- *
+ *  Venn   *
+ * --------*/
+
+.venn {
+
+}
+
+.venn__title {
+  width: 100%;
+  margin-bottom: 0;
+  @include bp(small) {
+    margin-bottom: 3rem;
+  }
+}
+
+.venn__ul {
+  display: block;
+  display: flex;
+  position: relative;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  li {
+    color: white;
+    padding: .5rem 0;
+  }
+}
+
+.ven__meh {
+  color: white;
+  z-index: 99;
+  position: relative;
+  width: 100%;
+  @include bp(small) {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.venn__group {
+  font-size: 1.5rem;
+  display: block;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.venn__ul--likes {
+  z-index: 2;
+  background: $blue;
+  background: rgba(100,138,182,.7);
+  top: 3rem;
+  @include bp(small) {
+    top: 0;
+    left: 3.5rem;
+  }
+}
+
+.venn__ul--dislikes {
+  background: $red;
+  background: rgba(222,90,61,.7);
+  top: -3rem;
+  @include bp(small) {
+    top: 0;
+    right: 3.5rem;
+  }
+}
+
+.venn__key {
+  font-size: 1.25rem;
+  padding-top: 2rem;
+  width: 100%;
+  display: block;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  @include bp(small) {
+    padding-top: 4rem;
+  }
+  li {
+    padding: .5rem 1rem;
+    font-weight: bold;
+  }
+  li:before {
+    content: "";
+    display: inline-block;
+    width: .75rem;
+    height: .75rem;
+    border-radius: 50%;
+    margin-right: .5rem;
+
+  }
+}
+
+.venn__key__likes {
+  color: $blue;
+  &:before {
+    background: $blue;
+  }
+}
+
+.venn__key__dislikes {
+  color: $red;
+  &:before {
+    background: $red;
+  }
+}
+
+.venn__key__meh {
+  position: relative;
+  z-index: 99;
+  color: #8b8aa3;
+  &:before {
+    background: #8b8aa3;
+  }
+}
