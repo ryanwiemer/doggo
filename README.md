@@ -7,7 +7,7 @@ Doggo For Hire.
 * `npm run start` to start a development server and watch for changes within the `build` folder
 * `npm run deploy` to create a production ready build located in the `dist` folder
 
-##File Structure
+## File Structure
 ```
 ├── src
 │   ├── index.html              # Static HTML file
