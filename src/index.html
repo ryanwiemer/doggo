@@ -23,7 +23,6 @@
     * https://modernizr.com/download/?-emoji-setclasses !*/
     !function(e,n,t){function a(e,n){return typeof e===n}function s(){var e,n,t,s,o,i,f;for(var c in r)if(r.hasOwnProperty(c)){if(e=[],n=r[c],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(s=a(n.fn,"function")?n.fn():n.fn,o=0;o<e.length;o++)i=e[o],f=i.split("."),1===f.length?Modernizr[f[0]]=s:(!Modernizr[f[0]]||Modernizr[f[0]]instanceof Boolean||(Modernizr[f[0]]=new Boolean(Modernizr[f[0]])),Modernizr[f[0]][f[1]]=s),l.push((s?"":"no-")+f.join("-"))}}function o(e){var n=c.className,t=Modernizr._config.classPrefix||"";if(u&&(n=n.baseVal),Modernizr._config.enableJSClass){var a=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(a,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),u?c.className.baseVal=n:c.className=n)}function i(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):u?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}var l=[],r=[],f={_version:"3.5.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){r.push({name:e,fn:n,options:t})},addAsyncTest:function(e){r.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=f,Modernizr=new Modernizr;var c=n.documentElement,u="svg"===c.nodeName.toLowerCase();Modernizr.addTest("canvas",function(){var e=i("canvas");return!(!e.getContext||!e.getContext("2d"))}),Modernizr.addTest("canvastext",function(){return Modernizr.canvas===!1?!1:"function"==typeof i("canvas").getContext("2d").fillText}),Modernizr.addTest("emoji",function(){if(!Modernizr.canvastext)return!1;var n=e.devicePixelRatio||1,t=12*n,a=i("canvas"),s=a.getContext("2d");return s.fillStyle="#f00",s.textBaseline="top",s.font="32px Arial",s.fillText("🐨",0,0),0!==s.getImageData(t,t,1,1).data[0]}),s(),o(l),delete f.addTest,delete f.addAsyncTest;for(var d=0;d<Modernizr._q.length;d++)Modernizr._q[d]();e.Modernizr=Modernizr}(window,document);
   </script>
-  <script src="scripts.min.js"></script>
   <link rel='stylesheet' href='style.min.css' type='text/css' />
 </head>
 <body>
@@ -31,20 +30,20 @@
   <main class="main">
     <section class="intro">
       <div class="intro__media">
-        <img data-object-fit src="img/birch1.jpg" id="intro__image--1" class="intro__image intro__image--1"/>
-        <img data-object-fit src="img/birch2.jpg" id="intro__image--2" class="intro__image intro__image--2"/>
-        <img data-object-fit src="img/birch3.jpg" id="intro__image--3" class="intro__image intro__image--3"/>
-        <img data-object-fit src="img/birch4.jpg" id="intro__image--4" class="intro__image intro__image--4"/>
-        <img data-object-fit src="img/birch5.jpg" id="intro__image--5" class="intro__image intro__image--5"/>
-        <img data-object-fit src="img/birch6.jpg" id="intro__image--6" class="intro__image intro__image--6"/>
-        <img data-object-fit src="img/birch7.jpg" id="intro__image--7" class="intro__image intro__image--7"/>
-        <img data-object-fit src="img/birch8.jpg" id="intro__image--8" class="intro__image intro__image--8"/>
-        <img data-object-fit src="img/birch9.jpg" id="intro__image--9" class="intro__image intro__image--9"/>
-        <img data-object-fit src="img/birch10.jpg" id="intro__image--10" class="intro__image intro__image--10"/>
-        <img data-object-fit src="img/birch11.jpg" id="intro__image--11" class="intro__image intro__image--11"/>
-        <img data-object-fit src="img/birch12.jpg" id="intro__image--12" class="intro__image intro__image--12"/>
-        <img data-object-fit src="img/birch13.jpg" id="intro__image--13" class="intro__image intro__image--13"/>
-        <img data-object-fit src="img/birch14.jpg" id="intro__image--14" class="intro__image intro__image--14"/>
+        <img data-object-fit src="img/birch1.jpg" id="intro__image--1" class="intro__image"/>
+        <img data-object-fit src="img/birch2.jpg" id="intro__image--2" class="intro__image"/>
+        <img data-object-fit src="img/birch3.jpg" id="intro__image--3" class="intro__image"/>
+        <img data-object-fit src="img/birch4.jpg" id="intro__image--4" class="intro__image"/>
+        <img data-object-fit src="img/birch5.jpg" id="intro__image--5" class="intro__image"/>
+        <img data-object-fit src="img/birch6.jpg" id="intro__image--6" class="intro__image"/>
+        <img data-object-fit src="img/birch7.jpg" id="intro__image--7" class="intro__image"/>
+        <img data-object-fit src="img/birch8.jpg" id="intro__image--8" class="intro__image"/>
+        <img data-object-fit src="img/birch9.jpg" id="intro__image--9" class="intro__image"/>
+        <img data-object-fit src="img/birch10.jpg" id="intro__image--10" class="intro__image"/>
+        <img data-object-fit src="img/birch11.jpg" id="intro__image--11" class="intro__image"/>
+        <img data-object-fit src="img/birch12.jpg" id="intro__image--12" class="intro__image"/>
+        <img data-object-fit src="img/birch13.jpg" id="intro__image--13" class="intro__image"/>
+        <img data-object-fit src="img/birch14.jpg" id="intro__image--14" class="intro__image"/>
       </div>
       <div class="intro__container">
         <div class="intro__item intro__item--1">
@@ -56,7 +55,7 @@
           <p>A 90-pound goldendoodle with a heart of gold.</p>
         </div>
         <div class="intro__item intro__item--3">
-          <p>Always loyal and loving this doggo can make just about anyone smile.</p>
+          <p>Always eager to please this doggo can make just about anyone smile.</p>
         </div>
         <div class="intro__item intro__item--4">
           <p>He's also pretty heckin' cute.</p>
@@ -215,5 +214,6 @@
       </div>
     </section>
   </main>
+<script src="scripts.min.js"></script>
 </body>
 </html>

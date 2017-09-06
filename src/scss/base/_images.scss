@@ -43,12 +43,3 @@ img {
   height: 100%;
   display: block;
 }
-
-//Prelaod image sequence
-.intro__media:before {
-  content: '';
-  background-image: url('/img/birch1.jpg'),url('/img/birch2.jpg'),url('/img/birch3.jpg'),url('/img/birch4.jpg'),url('/img/birch5.jpg'),url('/img/birch6.jpg'),url('/img/birch7.jpg'),url('/img/birch8.jpg'),url('/img/birch9.jpg'),url('/img/birch10.jpg'),url('/img/birch11.jpg'),url('/img/birch12.jpg'),url('/img/birch13.jpg'),url('/img/birch14.jpg');
-	width:0;
-	height:0;
-	visibility:hidden;
-}

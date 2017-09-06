@@ -27,15 +27,18 @@ const images = [
 
 const obj = {curImg: 0};
 
-const tween = TweenLite.to(obj, 0.5,
+const tween = TweenMax.to(obj, 0.5,
   {
     curImg: images.length - 1,
     roundProps: "curImg",
     immediateRender: true,
     ease: Linear.easeNone,
     onUpdate: function () {
-      //console.log(className);
-      document.getElementById(images[obj.curImg]).classList.toggle('active');
+      var elements = document.querySelectorAll('.intro__image');
+      for (var i = 0; i < elements.length; i++) {
+        elements[i].style.visibility = 'hidden';
+      }
+      document.getElementById(images[obj.curImg]).style.visibility = 'visible';
     }
   }
 );
