@@ -82,7 +82,10 @@
   line-height: 1.15;
   position: absolute;
   top: 5vh;
-  margin: 0 auto;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto !important;
   @include bp(small) {
     font-size: 5rem;
   }
