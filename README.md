@@ -1,5 +1,7 @@
-# README
-[Doggo For Hire](https://www.doggoforhire.com/) - A digital resume for an awesome dog named Birch.
+# [Doggo For Hire](https://www.doggoforhire.com/)
+A digital resume for an awesome dog named Birch.
+
+![screenshot](screenshot.jpg "screenshot")
 
 ## Awards
 * ["Most Loved" on One Page Love](https://onepagelove.com/doggo-for-hire) 🎉
