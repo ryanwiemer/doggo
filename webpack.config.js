@@ -4,6 +4,7 @@ const autoprefixer = require('autoprefixer');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const debug = process.env.NODE_ENV !== "production";
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
   context: __dirname,
@@ -70,7 +71,6 @@ module.exports = {
   plugins: [
     new CopyWebpackPlugin([{ from: 'src/index.html' }, { from:'src/img', to: 'img' }], { ignore: [ '*.DS_Store' ] }),
     new ExtractTextPlugin('style.min.css'),
-    debug ? new webpack.optimize.UglifyJsPlugin({ mangle: false, sourcemap: true, comments: true, }) :
-    new webpack.optimize.UglifyJsPlugin({ mangle: true, sourcemap: false, comments: false, })
+    new UglifyJSPlugin()
     ]
 };
