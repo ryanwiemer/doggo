@@ -50,7 +50,7 @@
   },
   "dependencies": {
     "gsap": "^1.20.2",
-    "lazysizes": "^4.0.0-rc3",
+    "lazysizes": "^5.2.1",
     "objectFitPolyfill": "^2.0.5",
     "scrollmagic": "^2.0.5"
   }
