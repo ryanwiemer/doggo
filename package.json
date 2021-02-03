@@ -49,7 +49,7 @@
     "webpack": "^3.6.0"
   },
   "dependencies": {
-    "gsap": "^1.20.2",
+    "gsap": "^3.6.0",
     "lazysizes": "^4.0.0-rc3",
     "objectFitPolyfill": "^2.0.5",
     "scrollmagic": "^2.0.5"
